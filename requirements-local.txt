@@ -1,0 +1,5 @@
+# Local GPU voices (Qwen3-TTS). setup.bat installs CUDA PyTorch first:
+#   uv pip install "torch==2.11.0+cu128" "torchaudio==2.11.0+cu128" --index-url https://download.pytorch.org/whl/cu128
+faster-qwen3-tts==0.5.4
+# transformers 5.20 breaks Qwen3-TTS's audio codec loader ("MimiConfig has no attribute rope_theta").
+transformers==5.15.1
